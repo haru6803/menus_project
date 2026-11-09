@@ -30,7 +30,7 @@ async function getAllMenus() {
 // 검색어에 따라 리턴받은 데이터는 여러개일 수 있다.. 수정은 오직 한 개만 받아야 한다.
 async function searchMenus(keyword) {
   try {
-    const url = `${API_SERVER}/menus/search?word=` + keyword;
+    const url = `${API_SERVER}/menus/search?word=${keyword}`;
     const re = await fetch(url, {
       method: "get",
     });
