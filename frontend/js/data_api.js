@@ -68,7 +68,7 @@ async function deleteMenu(menuId) {
     // ..  const url = "http://127.0.0.1:8000/menus?menuId="+menuId;  # ? 뒤에가 변수를 붙힌것이고
 
     // 2. path 파라미터방식 : url 경로에 포함해서 보냅니다.
-    const url = `https://menus-project-back-kxj8.onrender.com${menuId}`; // 변수명 없이 그냥 값만 붙힌다..  path 파리미터방식
+    const url = `${API_SERVER}/menus/${menuId}`; // 변수명 없이 그냥 값만 붙힌다..  path 파리미터방식
 
     // 3. request body : html문서의  body 숨겨서 보낸다. addMenu() 함수에서  post  보내는 방식
 
