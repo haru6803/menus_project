@@ -127,7 +127,7 @@ async function updateMenu(menuObject) {
 async function recommendMenu(id) {
   console.log("aaaa");
   try {
-    const url = `${API_SERVER}/menus/menus/recommend/${id}`;
+    const url = `${API_SERVER}/menus/recommend/${id}`;
     const re = await fetch(url, {
       method: "POST",
     });
